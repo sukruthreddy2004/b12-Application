@@ -15,7 +15,7 @@ def main():
         "name": "Sai Sukruth Reddy Dodla",
         "repository_link": "https://github.com/sukruthreddy2004/b12-Application",
         "resume_link": "https://drive.google.com/file/d/1IJHMFPb4th7y2esOp1Y5iC9k8Y2e_xxo/view?usp=drive_link",
-        "timestamp": datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z"),
+        "timestamp": datetime.utcnow().isoformat(timespec="milliseconds") + "Z" ,
     }
 
     body = json.dumps(payload, separators=(",", ":"), sort_keys=True).encode("utf-8")
